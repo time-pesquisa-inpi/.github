@@ -1,0 +1,21 @@
+name: Pedido de ajuda / bloqueio
+description: Travou em algo? Peça ajuda aqui.
+title: "[ajuda] "
+labels: ["bloqueado", "ajuda-necessaria"]
+body:
+  - type: input
+    id: issue
+    attributes:
+      label: Em qual tarefa você está?
+      placeholder: "#12"
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que está acontecendo?
+      description: Mensagem de erro, print, o que você esperava acontecer.
+    validations:
+      required: true
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou?
